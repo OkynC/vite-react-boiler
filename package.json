@@ -1,0 +1,51 @@
+{
+  "name": "vite-react-boiler",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.ts*\" \"tests/**/*.ts*\" \"src/**/*.css\"",
+    "format:check": "prettier --check \"src/**/*.ts*\" \"tests/**/*.ts*\"  \"src/**/*.css\"",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "check:types": "tsc --noEmit",
+    "test": "vitest run",
+    "test:cov": "vitest run --coverage --pool=forks"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.69.0",
+    "@tanstack/react-query-devtools": "^5.69.0",
+    "axios": "^1.8.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.3.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@types/react-router-dom": "^5.3.3",
+    "@tanstack/eslint-plugin-query": "^5.68.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-testing-library": "^6.5.0",
+    "globals": "^15.15.0",
+    "prettier": "^3.5.3",
+    "prettier-eslint": "^16.3.0",
+    "typescript": "~5.8.2",
+    "typescript-eslint": "^8.26.1",
+    "vite": "^6.2.2",
+    "vitest": "^3.0.9"
+  }
+}

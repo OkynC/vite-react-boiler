@@ -1,0 +1,2 @@
+Here be static components that will be used in the app.
+It can be the location of design system components, or components that are used in multiple places in the app.
