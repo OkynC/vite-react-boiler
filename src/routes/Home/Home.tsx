@@ -21,13 +21,13 @@ const Home = () => {
       {characters
         .filter((c) => c.alignment === "loyal")
         .map((c) => (
-          <div>{c.name}</div>
+          <div key={c.id}>{c.name}</div>
         ))}
       <h2>Chaotic:</h2>
       {characters
         .filter((c) => c.alignment === "chaotic")
         .map((c) => (
-          <div>{c.name}</div>
+          <div key={c.id}>{c.name}</div>
         ))}
       <button onClick={handleOnClick}>go to another page</button>
     </>

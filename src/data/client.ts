@@ -1,7 +1,5 @@
 import axios from "axios";
 
-//import { getAuthInfo } from "@/helpers/jwt";
-
 const axiosClient = axios.create({
   baseURL: "/",
   timeout: 60 * 1000,
@@ -9,11 +7,9 @@ const axiosClient = axios.create({
 
 // set the AUTH token for any request
 axiosClient.interceptors.request.use(async (config) => {
-  /*const { token } = await getAuthInfo();
-  if (!token) {
-    return Promise.reject(new Error("No token available"));
-  }
-  config.headers.Authorization = token ? `Bearer ${token}` : "";*/
+  /* Uncomment this to add any information in all axios requests
+  config.headers.Authorization = token ? `Bearer ${token}` : "";
+  */
   return config;
 });
 
