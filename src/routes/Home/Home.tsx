@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import { useCharactersQuery } from "../../data/authors/queries";
+import { useCharactersQuery } from "../../data/characters/queries.ts";
 
 const Home = () => {
   const navigate = useNavigate();
